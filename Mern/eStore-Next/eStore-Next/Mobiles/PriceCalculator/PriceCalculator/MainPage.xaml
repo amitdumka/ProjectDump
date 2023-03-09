@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PriceCalculator.MainPage">
+
+
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30"
+        HorizontalOptions="Start"
+            VerticalOptions="Start">
+        <Border  BackgroundColor="AntiqueWhite" Stroke="Red" StrokeLineJoin="Round" StrokeLineCap="Round" StrokeThickness="2" >
+        <VerticalStackLayout Padding="10" BackgroundColor="AliceBlue">
+            <HorizontalStackLayout>
+                <Label Text="MRP"  Margin="10" TextColor="Orange"/>
+                <Entry Placeholder="MRP" x:Name="MRP" WidthRequest="150"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout BackgroundColor="Azure">
+                <RadioButton x:Name="Fabric" Margin="10"  Content="Fabric" TextColor="Blue" IsChecked="True"/>
+                <RadioButton x:Name="RMZ" TextColor="Red" Content="Readymade" Margin="10"/>
+            </HorizontalStackLayout>
+            <Label Text="" FontSize="Large" x:Name="Result" TextColor="Blue" TextDecorations="Underline" FontAttributes="Bold"/>
+            <Button
+                x:Name="CounterBtn"
+                Text="Calculate"
+                Clicked="CounterBtn_Clicked"
+                HorizontalOptions="Center" />
+        </VerticalStackLayout>
+        </Border>
+    </VerticalStackLayout>
+
+
+</ContentPage>

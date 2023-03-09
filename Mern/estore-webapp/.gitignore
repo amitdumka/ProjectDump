@@ -1,0 +1,11 @@
+*.log
+node_modules
+package-lock.json
+ClientApp/node_modules
+ClientApp/excel
+ClientApp/.vsCode
+ClientApp/build
+ClientApp/src2
+ClientApp/yarn.lock
+ClientApp/yarn-error.log
+wordGameDB

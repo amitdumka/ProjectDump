@@ -1,0 +1,3 @@
+D:\UserSpace\GitHub\estore-webapp\obj\Debug\eStoreWebAPP.njsproj.AssemblyReference.cache
+D:\UserSpace\GitHub\estore-webapp\obj\Debug\eStoreWebAPP.njsproj.CoreCompileInputs.cache
+D:\UserSpace\GitHub\estore-webapp\bin\Microsoft.NodejsTools.WebRole.dll

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="eStore_Maui.Pages.Stores.StorePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:app="clr-namespace:eStore_Maui.Resources.Styles"
+    xmlns:sfgrid="clr-namespace:Syncfusion.Maui.DataGrid;assembly=Syncfusion.Maui.DataGrid"
+    xmlns:viewModels="clr-namespace:eStore_Maui.ViewModels.Stores"
+    Title="Stores">
+    <ContentPage.BindingContext>
+        <viewModels:StoreViewModel x:Name="viewModel" />
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout>
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Image>
+                <Image.Source>
+                    <FontImageSource
+                        FontFamily="FontAwesome"
+                        Glyph="{x:Static app:IconFont.ShoppingCart}"
+                        Size="24"
+                        Color="{StaticResource Primary}" />
+                </Image.Source>
+            </Image>
+            <Label
+                Margin="10"
+                FontAttributes="Bold"
+                FontSize="Subtitle"
+                HorizontalOptions="CenterAndExpand"
+                Text="{Binding Title}"
+                TextColor="Blue"
+                VerticalOptions="Center" />
+
+        </HorizontalStackLayout>
+        <VerticalStackLayout>
+            <HorizontalStackLayout Margin="10" HorizontalOptions="CenterAndExpand">
+
+                <Button
+                    BackgroundColor="{StaticResource Accent_Blue100}"
+                    Command="{Binding AddButtonCommand}"
+                    Text="Add Store" />
+                <Button
+                    BackgroundColor="{StaticResource Accent}"
+                    Command="{Binding DeleteButtonCommand}"
+                    Text="Delete" />
+                <Button
+                    BackgroundColor="{StaticResource Accent_Blue200}"
+                    Command="{Binding RefreshButtonCommand}"
+                    Text="Refresh" />
+            </HorizontalStackLayout>
+            <VerticalStackLayout Padding="4" BackgroundColor="Beige">
+
+                <sfgrid:SfDataGrid
+                    x:Name="dataGrid"
+                    AutoGenerateColumnsMode="None"
+                    BackgroundColor="Black"
+                    CellDoubleTapped="dataGrid_CellDoubleTapped"
+                    CellLongPress="dataGrid_CellLongPress"
+                    CellTapped="dataGrid_CellTapped"
+                    ColumnWidthMode="Auto"
+                    HorizontalOptions="CenterAndExpand"
+                    HorizontalScrollBarVisibility="Always"
+                    ItemsSource="{Binding Entities}"
+                    MaximumHeightRequest="570"
+                    RowHeight="48"
+                    SelectionMode="SingleDeselect"
+                    SortingMode="Single"
+                    VerticalOptions="CenterAndExpand"
+                    VerticalScrollBarVisibility="Always">
+
+                    <sfgrid:SfDataGrid.DefaultStyle>
+                        <sfgrid:DataGridStyle
+                            AlternateRowBackground="#AFD5AA"
+                            HeaderRowBackground="#0074E3"
+                            HeaderRowFontAttributes="Bold"
+                            HeaderRowFontFamily="Roboto-Medium"
+                            HeaderRowFontSize="15"
+                            HeaderRowTextColor="White"
+                            RowBackground="#AFD5FB"
+                            RowFontSize="14"
+                            RowTextColor="#212121"
+                            SelectedRowTextColor="{x:StaticResource Tertiary}"
+                            SelectionBackground="{x:StaticResource Accent_Yellow200}" />
+                    </sfgrid:SfDataGrid.DefaultStyle>
+
+                    <!--<sfgrid:SfDataGrid.Columns>
+                        <sfgrid:DataGridTextColumn HeaderText="Code" MappingName="StoreId" />
+
+                        <sfgrid:DataGridTextColumn HeaderText="Name" MappingName="StoreName" />
+                        <sfgrid:DataGridTextColumn HeaderText="City" MappingName="City" />
+                        <sfgrid:DataGridTextColumn HeaderText="Manager" MappingName="StoreManager" />
+                        <sfgrid:DataGridCheckBoxColumn
+                            AllowSorting="True"
+                            HeaderText="Active"
+                            MappingName="IsActive" />
+
+                    </sfgrid:SfDataGrid.Columns>-->
+
+                    <!--<sfgrid:SfDataGrid.CurrentRow>
+                        <SwipeView>
+                            <SwipeView.LeftItems>
+                                <SwipeItems>
+                                    <SwipeItem
+                                        BackgroundColor="LightGreen"
+                                        IconImageSource="favorite.png"
+                                        Invoked="OnLeft"
+                                        Text="Favorite" />
+                                    <SwipeItem
+                                        BackgroundColor="LightPink"
+                                        IconImageSource="delete.png"
+                                        Invoked="OnRight"
+                                        Text="Delete" />
+                                </SwipeItems>
+                            </SwipeView.LeftItems>
+                        </SwipeView>
+                    </sfgrid:SfDataGrid.CurrentRow>-->
+
+                    <sfgrid:SfDataGrid.SortColumnDescriptions>
+                        <sfgrid:SortColumnDescription ColumnName="StoreName" />
+                    </sfgrid:SfDataGrid.SortColumnDescriptions>
+                </sfgrid:SfDataGrid>
+                <!--</SwipeView>-->
+            </VerticalStackLayout>
+            <Label
+                Padding="0,0,10,0"
+                BackgroundColor="#0074E3"
+                FontAttributes="Bold"
+                FontAutoScalingEnabled="True"
+                FontSize="Medium"
+                HorizontalTextAlignment="End"
+                Text="{Binding RecordCount, StringFormat='No Of Store : {0}', Mode=TwoWay}"
+                TextColor="White" />
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

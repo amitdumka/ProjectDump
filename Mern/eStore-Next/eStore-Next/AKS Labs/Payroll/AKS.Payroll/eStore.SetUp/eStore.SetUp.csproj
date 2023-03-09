@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="syncfusion.spreadsheet.windows" Version="19.4.0.56" />
+    <PackageReference Include="Syncfusion.XlsIO.WinForms" Version="19.4.0.56" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\AKS.Payroll.Database\AKS.Payroll.Database.csproj" />
+  </ItemGroup>
+
+</Project>

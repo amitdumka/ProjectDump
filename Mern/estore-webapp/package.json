@@ -1,0 +1,41 @@
+{
+  "name": "estore-webapp",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Amit Kumar @ AKS Labs(India)",
+  "scripts": {
+    "start": "node index",
+    "start-ej": "node ./bin/www",
+    "dev-ej":"nodemon ./bin/www",
+    "dev":"nodemon index",
+    "heroku-postbuild": "cd ClientApp && npm install  && npm run build"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.19.0",
+    "connect-mongo": "^4.6.0",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^10.0.0",
+    "ejs": "~2.6.1",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-handlebars": "^6.0.2",
+    "express-session": "^1.17.2",
+    "http-errors": "~1.6.3",
+    "lodash": "^4.17.11",
+    "method-override": "^3.0.0",
+    "moment": "^2.29.1",
+    "mongoose": "^5.13.13",
+    "morgan": "^1.9.1",
+    "mysql": "^2.18.1",
+    "passport": "^0.5.0",
+    "passport-google-oauth20": "^2.0.0",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AKS.Payroll.Database\AKS.Payroll.Database.csproj" />
+    <ProjectReference Include="..\AKS.Payroll\AKS.Libs\AKS.Libs.csproj" />
+    <ProjectReference Include="..\AKS.Payroll\AKS.Printers\AKS.Printers.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="eStore.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:widget="clr-namespace:eStore.Views"
+    x:Name="this">
+
+    <ScrollView BindingContext="{x:Reference this}">
+        <VerticalStackLayout
+            Padding="30,0"
+            BindingContext="{x:Reference this}"
+            Spacing="25"
+            VerticalOptions="Center">
+
+
+            <widget:WidgetStat
+                Title="Today Sale"
+                Margin="10"
+                Description="Rs. 10000"
+                HeaderText="Test Me"
+                HorizontalOptions="EndAndExpand"
+                Icon="dotnet_bot.png" />
+            <!--<widget:WidgetStat
+                Title="Yester Day Sale"
+                Description="Rs. 20000"
+                HeaderText="Yester Sale"
+                HorizontalOptions="Start"
+                Icon="dotnet_bot.png" />-->
+
+            <!--<widget:WidgetStat
+                Title="Yearly Sale"
+                Description="Rs. 221213120000"
+                HeaderText="Yearly Sale"
+                HorizontalOptions="End"
+                Icon="dotnet_bot.png" />-->
+
+            <widget:ListWidget
+                x:Name="LWA"
+                HeaderText="Sale Data"
+                HorizontalOptions="End" />
+
+            <Button
+                x:Name="CounterBtn"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Text="Click me" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

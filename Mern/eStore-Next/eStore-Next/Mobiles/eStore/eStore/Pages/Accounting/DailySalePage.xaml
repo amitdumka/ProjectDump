@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eStore.Pages.Accounting.DailySalePage"
+ xmlns:rlv="clr-namespace:eStore.MAUILib.Views.Custom;assembly=eStore.MAUILib"
+    Title="{Binding Title, Mode=TwoWay}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Monthly" Command="{Binding MonthlyCommand}"  CommandParameter="0" Order="Primary"/>
+        <ToolbarItem Text="Today" Command="{Binding TodayCommand}" CommandParameter="0" Order="Primary"/>
+        <ToolbarItem Text="Sync" Command="{Binding SyncCommand}" Order="Secondary"/>
+        <ToolbarItem Text="Last Month" Command="{Binding MonthlyCommand}"  CommandParameter="-1" Order="Secondary"/>
+        <ToolbarItem Text="Yesterday" Command="{Binding TodayCommand}" CommandParameter="-1" Order="Secondary"/>
+
+    </ContentPage.ToolbarItems>
+    <VerticalStackLayout>
+        <rlv:RecordListingView x:Name="RLV" AddButtonText="Add" />
+    </VerticalStackLayout>
+</ContentPage>

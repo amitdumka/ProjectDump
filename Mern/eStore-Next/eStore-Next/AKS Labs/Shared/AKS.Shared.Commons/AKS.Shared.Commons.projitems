@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>9ee7a62a-e3cd-4c07-bc43-aa6afb980c8c</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>AKS.Shared.Commons</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Helpers\EmptyToNullConverter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Types\DataTypes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\DateTimeExtensions\DateHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions\EnumExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Accounts\Voucher.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Auth\LocalUser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Banking\Bank.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Base\BaseModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Inventory\Product.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Sales\DailySale.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Store.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ops\CurrentSession.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ops\InternetStatus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Accounts\VoucherVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Dashboard\AccountingVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\Widgets\FirstPageVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\Helpers\Auth\AuthHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Data\Helpers\Auth\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Icons\AppIcons.zip" />
+    <None Include="$(MSBuildThisFileDirectory)Icons\IconKitchen-Output (1).zip" />
+    <None Include="$(MSBuildThisFileDirectory)Icons\IconKitchen-Output.zip" />
+    <None Include="$(MSBuildThisFileDirectory)Icons\ic_launcher (1).zip" />
+    <None Include="$(MSBuildThisFileDirectory)Icons\ic_launcher-632dddc8716b8.zip" />
+    <None Include="$(MSBuildThisFileDirectory)Icons\ic_launcher.zip" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,22 @@
+{
+  "name": "mongodb-gen",
+  "version": "1.0.0",
+  "description": "Generate mongodb models and controller ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mongo",
+    "db",
+    "node",
+    "js",
+    "c#"
+  ],
+  "author": "Amit Kumar ( AKS Labs)",
+  "license": "MIT",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="eStore.Pages.Inventory.Entry.SaleEntryPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:dxdf="clr-namespace:DevExpress.Maui.DataForm;assembly=DevExpress.Maui.Editors"
+    xmlns:dxe="clr-namespace:DevExpress.Maui.Editors;assembly=DevExpress.Maui.Editors"
+    Title="Sale"
+    BackgroundColor="{x:StaticResource Accent_Blue200}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Command="{Binding SaveCommand}" Text="Save" />
+        <ToolbarItem Command="{Binding CancleCommand}" Text="Cancel" />
+    </ContentPage.ToolbarItems>
+    <ScrollView>
+        <StackLayout>
+            <HorizontalStackLayout>
+                <DatePicker Date="{Binding InvoiceDate}" />
+                <dxe:AutoCompleteEdit
+                    Text="{Binding MobileNo}"
+                    DisplayMember="CustomerName"
+                    Margin="16,0"
+                    LabelText="Mobile Number"
+                    PlaceholderText="Add 91 to Search..."
+                    VerticalOptions="Center">
+                    <dxe:AutoCompleteEdit.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Label Padding="10" Text="{Binding MobileNo}" FontAttributes="Bold"/>
+                                <Label Padding="10" Grid.Column="2" Text="{Binding CustomerName}" HorizontalTextAlignment="End"/>
+                            </Grid>
+                        </DataTemplate>
+                    </dxe:AutoCompleteEdit.ItemTemplate>
+                    <dxe:AutoCompleteEdit.ItemsSourceProvider>
+                        <dxe:AsyncItemsSourceProvider RequestDelay="500"  SuggestionsRequested="OnDelegateRequested" />
+                    </dxe:AutoCompleteEdit.ItemsSourceProvider>
+                </dxe:AutoCompleteEdit>
+                <Entry Placeholder="Customer Name" Text="{Binding CustomerName}" />
+                <ImageButton Source="rain.png"  Command="AddCustomerCommand"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout BackgroundColor="{x:StaticResource Accent_Blue200}">
+                <Label Text="{Binding TotalMRP, StringFormat='MRP :{0}'}" />
+                <Label Text="{Binding TotalDiscountAmount, StringFormat='Discount Amount:{0}'}" />
+                <Label Text="{Binding TotalBasicAmount, StringFormat='Basic Amount:{0}'}" />
+                <Label Text="{Binding TotalTaxAmount, StringFormat='Tax Amount:{0}'}" />
+                <Label Text="{Binding BillAmount, StringFormat='Bill Amount:{0}'}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout BackgroundColor="{x:StaticResource Accent_Blue200}">
+                <Label Text="{Binding TotalBilledQty, StringFormat='Billed Qty:{0}'}" />
+                <Label Text="{Binding TotalFreeQty, StringFormat='Free Item: {0}'}" />
+                <Label Text="{Binding TotalQty, StringFormat='TotalQty:{0}'}" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout BackgroundColor="{x:StaticResource Accent_Blue200}">
+                <dxe:TextEdit PlaceholderText="Barcode" Text="{Binding Barcode}" LabelText="Barcode"  />
+                <dxe:NumericEdit PlaceholderText="Qty" Value="{Binding Qty}" DisplayFormat="n1" MaxDecimalDigitCount="2"/>
+                <dxe:NumericEdit PlaceholderText="Rate" Value="{Binding Rate}" DisplayFormat="c"/>
+                <dxe:NumericEdit PlaceholderText="Discount" Value="{Binding Discount}" DisplayFormat="c"/>
+                <dxe:NumericEdit PlaceholderText="LineTotal" Value="{Binding LineTotal}" DisplayFormat="c"/>
+                <ImageButton Command="{Binding AddSaleItemCommand}" Source="rain.png" />
+            </HorizontalStackLayout>
+            <BoxView
+                Margin="0,0,0,10"
+                HeightRequest="2"
+                HorizontalOptions="Fill"
+                MaximumWidthRequest="200"
+                Color="{x:StaticResource Accent_Yellow200}" />
+            <ScrollView
+                HorizontalScrollBarVisibility="Always"
+                MaximumHeightRequest="200"
+                VerticalScrollBarVisibility="Always">
+                <CollectionView
+                    Margin="{OnIdiom Phone='6,0,0,0',
+                                     Tablet='17,0,0,10'}"
+                    BackgroundColor="{x:StaticResource Accent_Yellow200}"
+                    HorizontalScrollBarVisibility="Always"
+                    ItemSizingStrategy="MeasureAllItems"
+                    ItemsSource="{Binding SaleItems}"
+                    ItemsUpdatingScrollMode="KeepLastItemInView">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Padding="2">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <Label
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Padding="0,0,5,0"
+                                    FontAttributes="Bold"
+                                    HorizontalOptions="CenterAndExpand"
+                                    Text="{Binding Barcode}"
+                                    TextColor="{x:StaticResource Accent_Blue100}" />
+                                <Label
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Padding="0,0,5,0"
+                                    Text="{Binding Qty}"
+                                    TextColor="{x:StaticResource Accent_Yellow100}" />
+                                <Label
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Padding="0,0,5,0"
+                                    Text="{Binding DiscountAmount}"
+                                    TextColor="{x:StaticResource Accent_Yellow100}" />
+                                <Label
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Padding="0,0,5,0"
+                                    Text="{Binding LineTotal}"
+                                    TextColor="{x:StaticResource Accent_Yellow100}" />
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </ScrollView>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
