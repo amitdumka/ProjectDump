@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+       <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:dataform="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:local="clr-namespace:eStoreMobileX.ViewModel"
+              xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms"
+              xmlns:numberic="clr-namespace:Syncfusion.SfNumericTextBox.XForms;assembly=Syncfusion.SfNumericTextBox.XForms"
+              Title="Stock List"
+              x:Class="eStoreMobileX.Views.StockForm">
+
+              <ContentPage.ToolbarItems>
+                    <ToolbarItem Text="List" Order="Default" Priority="0" x:Name="List" Clicked="List_Clicked" />
+                    <!--<ToolbarItem Text="To Pdf" Order="Secondary" Priority="0" x:Name="PDF_Export" Clicked="PDF_Export_Clicked"/>
+                    <ToolbarItem Text="To Excel" Order="Secondary" Priority="0" x:Name="Excel_Export" Clicked="Excel_Export_Clicked"/>-->
+                    <ToolbarItem Text="Sync" Order="Default" Priority="0"  x:Name="Sync" Clicked="Sync_Clicked"/>
+              </ContentPage.ToolbarItems>
+              <ContentPage.BindingContext>
+                     <local:StockListViewModel x:Name="viewModel" />
+              </ContentPage.BindingContext>
+              <ContentPage.Content>
+                     <StackLayout Padding="20">
+                            <Label Text="Stock Form"
+                                   VerticalOptions="Start"
+                                   TextColor="DarkBlue"
+                                   FontSize="20"
+                                   HorizontalOptions="CenterAndExpand" />
+                           
+                            <StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label x:Name="barcode" Text=" BarCode : " TextColor="Blue" Margin="0,0,10,0" />
+                                    <Label x:Name="codeType" Text="Type: " TextColor="DarkCyan"/>
+                                 </StackLayout>
+                                  
+                            </StackLayout>
+                          <zxing:ZXingScannerView IsScanning="True"
+                                          OnScanResult="ZXingScannerView_OnScanResult"
+                                          BackgroundColor="AntiqueWhite" 
+                                          />
+            <dataform:SfDataForm x:Name="dataForm"    NotifyPropertyChanges="True"
+                                   AutoGeneratingDataFormItem="DataForm_AutoGeneratingDataFormItem"
+                                   DataObject="{Binding StockList}"
+                                   LayoutOptions="TextInputLayout" />
+                            <StackLayout Orientation="Horizontal">
+                                   <Button Text="Save"  x:Name="SaveData" Clicked="Save_Clicked"/>
+                                   
+                            </StackLayout>
+                     </StackLayout>
+              </ContentPage.Content>
+       </ContentPage>

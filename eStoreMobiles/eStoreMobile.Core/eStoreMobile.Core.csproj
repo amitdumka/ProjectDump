@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+    <PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
+    <PackageReference Include="SQLiteNetExtensions.Async" Version="2.1.0" />
+    <PackageReference Include="Syncfusion.Xamarin.SfDataGrid" Version="19.3.0.43" />
+    <PackageReference Include="Syncfusion.Xamarin.SfNumericTextBox" Version="19.3.0.43" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    <PackageReference Include="System.Text.Json" Version="5.0.2" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2125" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.19" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.19" />
+    <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
+    <PackageReference Include="Syncfusion.Xamarin.DataGridExport" Version="19.3.0.43" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ApiSync\" />
+    <Folder Include="DataViewModel\DataModel\" />
+    <Folder Include="DataViewModel\Payroll\" />
+    <Folder Include="DataViewModel\Accounts\" />
+    <Folder Include="Models\Invoicing\" />
+    <Folder Include="DataViewModel\Invoices\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Syncfusion.Xamarin.DataGridExport" />
+    <None Remove="DataViewModel\DataModel\" />
+    <None Remove="DataViewModel\Payroll\" />
+    <None Remove="DataViewModel\Accounts\" />
+    <None Remove="Models\Invoicing\" />
+    <None Remove="DataViewModel\Invoices\" />
+  </ItemGroup>
+  <Import Project="..\eStoreMobile.Shared\eStoreMobile.Shared.projitems" Label="Shared" />
+
+</Project>

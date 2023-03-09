@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pulltorefresh="clr-namespace:Syncfusion.SfPullToRefresh.XForms;assembly=Syncfusion.SfPullToRefresh.XForms" 
+    xmlns:datagrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
+    xmlns:local="clr-namespace:eStoreMobileX.ViewModel.Vouchers"
+    Title="Receipt"    
+    x:Class="eStoreMobileX.Views.Vochers.ReceiptPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+ Add" Clicked="ToolbarItem_Clicked"/>
+        <!--<ToolbarItem Text=" Sync Up" Order="Secondary" Clicked="SyncUp_Clicked"/>-->
+    </ContentPage.ToolbarItems>
+    <ContentPage.BindingContext>
+        <local:ReceiptViewModel x:Name="viewModel" />
+    </ContentPage.BindingContext>
+    <ContentPage.Content BackgroundColor="#1B1F35">
+        <pulltorefresh:SfPullToRefresh BackgroundColor="BurlyWood" x:Name="pullToRefresh">
+            <pulltorefresh:SfPullToRefresh.PullableContent>
+                <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" Padding="1">
+                    <Label Text="Receipts" FontSize="Title" TextColor="IndianRed" HorizontalTextAlignment="Center" TextDecorations="Underline" FontAttributes="Bold" />
+
+                    <StackLayout Margin="0" VerticalOptions="StartAndExpand" Padding="5">
+                       <datagrid:SfDataGrid ItemsSource="{Binding ItemList}"
+                                                    x:Name="dataGrid"
+                                                    BackgroundColor="#E5EBFF"
+                                                    
+                                                    AllowSwiping="true"
+                                                    AllowSorting="True"
+                                                    ColumnSizer="Star"
+                                                    SelectionMode="Single"
+                                                    AutoGenerateColumns="False"  HeightRequest="600" 
+                                                    VerticalOptions="StartAndExpand">
+                           
+                            <datagrid:SfDataGrid.Columns x:TypeArguments="syncfusion:Columns" >
+            
+                                <datagrid:GridTextColumn HeaderText="Id"
+                                     HeaderFontAttribute="Bold"  ColumnSizer="Star"
+                                     MappingName="ReceiptId" />
+
+                                <datagrid:GridTextColumn HeaderText="SlipNo"
+                                        TextAlignment="Center"
+                                        HeaderFontAttribute="Bold"
+                                        HeaderTextAlignment="Center"
+                                        ColumnSizer="LastColumnFill"
+                                        MappingName="RecieptSlipNo" />
+
+                                <datagrid:GridDateTimeColumn HeaderText="Date"
+                                         HeaderFontAttribute="Bold"   ColumnSizer="LastColumnFill"
+                                         MappingName="OnDate" />
+
+                                <datagrid:GridTextColumn HeaderText="Party"
+                                         HeaderFontAttribute="Bold"  ColumnSizer="LastColumnFill"
+                                         MappingName="PartyName" />
+
+                                <datagrid:GridTextColumn HeaderText="Mode"
+                                         HeaderFontAttribute="Bold"     ColumnSizer="LastColumnFill"
+                                         MappingName="PayMode" />
+                                <datagrid:GridTextColumn HeaderText="Amount"
+                                         HeaderFontAttribute="Bold"     ColumnSizer="LastColumnFill"
+                                         MappingName="Amount" />
+
+                                <datagrid:GridTextColumn HeaderText="Remarks"
+                                         HeaderFontAttribute="Bold"     ColumnSizer="LastColumnFill"
+                                         MappingName="Remarks" />
+
+                            </datagrid:SfDataGrid.Columns>
+                            <datagrid:SfDataGrid.SortColumnDescriptions>
+                                <datagrid:SortColumnDescription ColumnName="OnDate" />
+                            </datagrid:SfDataGrid.SortColumnDescriptions>
+                        </datagrid:SfDataGrid>
+                    </StackLayout>
+                     </StackLayout>
+            </pulltorefresh:SfPullToRefresh.PullableContent>
+        </pulltorefresh:SfPullToRefresh>
+    </ContentPage.Content>
+
+</ContentPage>
