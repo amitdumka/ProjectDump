@@ -1,0 +1,4 @@
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+let EletricityBillPayment-extd-BaseSTSchema = new Schema({OnDate:{type:String,enum: Object.values(DateTime),required:false},BillNumber:{type:String,required:false},RecieptNumber:{type:String,required:false},Amount:{type:Number,required:false},ConnectionId:{type:Number,required:false},Mode:{type:String,enum: Object.values(PaymentMode),required:false},Remarks:{type:String,required:false}},{collection:"EletricityBillPayment-extd-BaseST"});
+module.exports = mongoose.model("EletricityBillPayment-extd-BaseST",EletricityBillPayment-extd-BaseSTSchema);

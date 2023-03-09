@@ -1,0 +1,4 @@
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+let invoicePaymentSchema = new Schema({invoiceNumber:{type:String,required:false},onDate:{type:DateTime,required:false},paymentMode:{type:String,enum: Object.values(payMode),required:false},amount:{type:Number,required:false},cashAmount:{type:Number,required:false},nonCashAmount:{type:Number,required:false},paymentRef:{type:String,required:false},paymentDetails:{type:String,required:false},remarks:{type:String,required:false}},{collection:"invoicePayment"});
+module.exports = mongoose.model("invoicePayment",invoicePaymentSchema);

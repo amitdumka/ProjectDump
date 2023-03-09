@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B25A558728E9E747007A3550 /* GarmenysApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A558628E9E747007A3550 /* GarmenysApp.swift */; };
+		B25A558928E9E747007A3550 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A558828E9E747007A3550 /* ContentView.swift */; };
+		B25A558B28E9E749007A3550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B25A558A28E9E749007A3550 /* Assets.xcassets */; };
+		B25A558E28E9E749007A3550 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B25A558D28E9E749007A3550 /* Preview Assets.xcassets */; };
+		B25A559828E9E749007A3550 /* GarmenysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A559728E9E749007A3550 /* GarmenysTests.swift */; };
+		B25A55A228E9E749007A3550 /* GarmenysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A55A128E9E749007A3550 /* GarmenysUITests.swift */; };
+		B25A55A428E9E749007A3550 /* GarmenysUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25A55A328E9E749007A3550 /* GarmenysUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B25A559428E9E749007A3550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B25A557B28E9E747007A3550 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B25A558228E9E747007A3550;
+			remoteInfo = Garmenys;
+		};
+		B25A559E28E9E749007A3550 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B25A557B28E9E747007A3550 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B25A558228E9E747007A3550;
+			remoteInfo = Garmenys;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B25A558328E9E747007A3550 /* Garmenys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Garmenys.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B25A558628E9E747007A3550 /* GarmenysApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmenysApp.swift; sourceTree = "<group>"; };
+		B25A558828E9E747007A3550 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B25A558A28E9E749007A3550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B25A558D28E9E749007A3550 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B25A559328E9E749007A3550 /* GarmenysTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GarmenysTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B25A559728E9E749007A3550 /* GarmenysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmenysTests.swift; sourceTree = "<group>"; };
+		B25A559D28E9E749007A3550 /* GarmenysUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GarmenysUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B25A55A128E9E749007A3550 /* GarmenysUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmenysUITests.swift; sourceTree = "<group>"; };
+		B25A55A328E9E749007A3550 /* GarmenysUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmenysUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B25A558028E9E747007A3550 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B25A559028E9E749007A3550 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B25A559A28E9E749007A3550 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B25A557A28E9E747007A3550 = {
+			isa = PBXGroup;
+			children = (
+				B25A558528E9E747007A3550 /* Garmenys */,
+				B25A559628E9E749007A3550 /* GarmenysTests */,
+				B25A55A028E9E749007A3550 /* GarmenysUITests */,
+				B25A558428E9E747007A3550 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B25A558428E9E747007A3550 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B25A558328E9E747007A3550 /* Garmenys.app */,
+				B25A559328E9E749007A3550 /* GarmenysTests.xctest */,
+				B25A559D28E9E749007A3550 /* GarmenysUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B25A558528E9E747007A3550 /* Garmenys */ = {
+			isa = PBXGroup;
+			children = (
+				B25A558628E9E747007A3550 /* GarmenysApp.swift */,
+				B25A558828E9E747007A3550 /* ContentView.swift */,
+				B25A558A28E9E749007A3550 /* Assets.xcassets */,
+				B25A558C28E9E749007A3550 /* Preview Content */,
+			);
+			path = Garmenys;
+			sourceTree = "<group>";
+		};
+		B25A558C28E9E749007A3550 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B25A558D28E9E749007A3550 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B25A559628E9E749007A3550 /* GarmenysTests */ = {
+			isa = PBXGroup;
+			children = (
+				B25A559728E9E749007A3550 /* GarmenysTests.swift */,
+			);
+			path = GarmenysTests;
+			sourceTree = "<group>";
+		};
+		B25A55A028E9E749007A3550 /* GarmenysUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B25A55A128E9E749007A3550 /* GarmenysUITests.swift */,
+				B25A55A328E9E749007A3550 /* GarmenysUITestsLaunchTests.swift */,
+			);
+			path = GarmenysUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B25A558228E9E747007A3550 /* Garmenys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B25A55A728E9E749007A3550 /* Build configuration list for PBXNativeTarget "Garmenys" */;
+			buildPhases = (
+				B25A557F28E9E747007A3550 /* Sources */,
+				B25A558028E9E747007A3550 /* Frameworks */,
+				B25A558128E9E747007A3550 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Garmenys;
+			productName = Garmenys;
+			productReference = B25A558328E9E747007A3550 /* Garmenys.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B25A559228E9E749007A3550 /* GarmenysTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B25A55AA28E9E749007A3550 /* Build configuration list for PBXNativeTarget "GarmenysTests" */;
+			buildPhases = (
+				B25A558F28E9E749007A3550 /* Sources */,
+				B25A559028E9E749007A3550 /* Frameworks */,
+				B25A559128E9E749007A3550 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B25A559528E9E749007A3550 /* PBXTargetDependency */,
+			);
+			name = GarmenysTests;
+			productName = GarmenysTests;
+			productReference = B25A559328E9E749007A3550 /* GarmenysTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B25A559C28E9E749007A3550 /* GarmenysUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B25A55AD28E9E749007A3550 /* Build configuration list for PBXNativeTarget "GarmenysUITests" */;
+			buildPhases = (
+				B25A559928E9E749007A3550 /* Sources */,
+				B25A559A28E9E749007A3550 /* Frameworks */,
+				B25A559B28E9E749007A3550 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B25A559F28E9E749007A3550 /* PBXTargetDependency */,
+			);
+			name = GarmenysUITests;
+			productName = GarmenysUITests;
+			productReference = B25A559D28E9E749007A3550 /* GarmenysUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B25A557B28E9E747007A3550 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					B25A558228E9E747007A3550 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					B25A559228E9E749007A3550 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = B25A558228E9E747007A3550;
+					};
+					B25A559C28E9E749007A3550 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = B25A558228E9E747007A3550;
+					};
+				};
+			};
+			buildConfigurationList = B25A557E28E9E747007A3550 /* Build configuration list for PBXProject "Garmenys" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B25A557A28E9E747007A3550;
+			productRefGroup = B25A558428E9E747007A3550 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B25A558228E9E747007A3550 /* Garmenys */,
+				B25A559228E9E749007A3550 /* GarmenysTests */,
+				B25A559C28E9E749007A3550 /* GarmenysUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B25A558128E9E747007A3550 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B25A558E28E9E749007A3550 /* Preview Assets.xcassets in Resources */,
+				B25A558B28E9E749007A3550 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B25A559128E9E749007A3550 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B25A559B28E9E749007A3550 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B25A557F28E9E747007A3550 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B25A558928E9E747007A3550 /* ContentView.swift in Sources */,
+				B25A558728E9E747007A3550 /* GarmenysApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B25A558F28E9E749007A3550 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B25A559828E9E749007A3550 /* GarmenysTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B25A559928E9E749007A3550 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B25A55A428E9E749007A3550 /* GarmenysUITestsLaunchTests.swift in Sources */,
+				B25A55A228E9E749007A3550 /* GarmenysUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B25A559528E9E749007A3550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B25A558228E9E747007A3550 /* Garmenys */;
+			targetProxy = B25A559428E9E749007A3550 /* PBXContainerItemProxy */;
+		};
+		B25A559F28E9E749007A3550 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B25A558228E9E747007A3550 /* Garmenys */;
+			targetProxy = B25A559E28E9E749007A3550 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B25A55A528E9E749007A3550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B25A55A628E9E749007A3550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B25A55A828E9E749007A3550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Garmenys/Preview Content\"";
+				DEVELOPMENT_TEAM = FB472HNZZJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Amit;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aks.Garments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B25A55A928E9E749007A3550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Garmenys/Preview Content\"";
+				DEVELOPMENT_TEAM = FB472HNZZJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Amit;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aks.Garments;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B25A55AB28E9E749007A3550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FB472HNZZJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aksLabs.GarmenysTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Garmenys.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Garmenys";
+			};
+			name = Debug;
+		};
+		B25A55AC28E9E749007A3550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FB472HNZZJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aksLabs.GarmenysTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Garmenys.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Garmenys";
+			};
+			name = Release;
+		};
+		B25A55AE28E9E749007A3550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FB472HNZZJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aksLabs.GarmenysUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Garmenys;
+			};
+			name = Debug;
+		};
+		B25A55AF28E9E749007A3550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FB472HNZZJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = aksLabs.GarmenysUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Garmenys;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B25A557E28E9E747007A3550 /* Build configuration list for PBXProject "Garmenys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B25A55A528E9E749007A3550 /* Debug */,
+				B25A55A628E9E749007A3550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B25A55A728E9E749007A3550 /* Build configuration list for PBXNativeTarget "Garmenys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B25A55A828E9E749007A3550 /* Debug */,
+				B25A55A928E9E749007A3550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B25A55AA28E9E749007A3550 /* Build configuration list for PBXNativeTarget "GarmenysTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B25A55AB28E9E749007A3550 /* Debug */,
+				B25A55AC28E9E749007A3550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B25A55AD28E9E749007A3550 /* Build configuration list for PBXNativeTarget "GarmenysUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B25A55AE28E9E749007A3550 /* Debug */,
+				B25A55AF28E9E749007A3550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B25A557B28E9E747007A3550 /* Project object */;
+}

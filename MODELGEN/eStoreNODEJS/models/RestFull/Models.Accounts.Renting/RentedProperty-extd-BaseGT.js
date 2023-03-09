@@ -1,0 +1,4 @@
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+let RentedProperty-extd-BaseGTSchema = new Schema({LocationName:{type:String,required:false},Address:{type:String,required:false},OwnerName:{type:String,required:false},ContactNumber:{type:String,required:false},OnDate:{type:String,enum: Object.values(DateTime),required:false},VacateDate:{type:String,enum: Object.values(DateTime?),required:false},Occupied:{type:Boolean,required:false},AdvanceAmount:{type:Number,required:false},RentType:{type:String,enum: Object.values(RentType),required:false},Remarks:{type:String,required:false}},{collection:"RentedProperty-extd-BaseGT"});
+module.exports = mongoose.model("RentedProperty-extd-BaseGT",RentedProperty-extd-BaseGTSchema);

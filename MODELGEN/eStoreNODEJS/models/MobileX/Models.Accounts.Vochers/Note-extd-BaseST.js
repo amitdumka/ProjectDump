@@ -1,0 +1,4 @@
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+let Note-extd-BaseSTSchema = new Schema({NoteNumber:{type:String,required:false},OnDate:{type:String,enum: Object.values(DateTime),required:false},NoteTyes:{type:String,enum: Object.values(NoteTyes),required:false},PartyName:{type:String,required:false},PartyId:{type:Number,required:false},Amount:{type:Number,required:false},WithGST:{type:Boolean,required:false},TaxAmount:{type:Number,required:false},Reason:{type:String,required:false},Remarks:{type:String,required:false}},{collection:"Note-extd-BaseST"});
+module.exports = mongoose.model("Note-extd-BaseST",Note-extd-BaseSTSchema);

@@ -1,0 +1,4 @@
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+let SalaryPayment-extd-BaseSTSchema = new Schema({EmployeeId:{type:Number,required:false},Employee:{type:String,enum: Object.values(Employee),required:false},SalaryMonth:{type:String,required:false},SalaryComponet:{type:String,enum: Object.values(SalaryComponet),required:false},OnDate:{type:String,enum: Object.values(DateTime),required:false},Amount:{type:Number,required:false},PayMode:{type:String,enum: Object.values(PayMode),required:false},Details:{type:String,required:false}},{collection:"SalaryPayment-extd-BaseST"});
+module.exports = mongoose.model("SalaryPayment-extd-BaseST",SalaryPayment-extd-BaseSTSchema);

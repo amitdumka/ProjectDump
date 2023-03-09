@@ -1,0 +1,4 @@
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+let Invoice-extd-BaseSTSchema = new Schema({InvoiceNumber:{type:String,required:false},InvoiceType:{type:String,enum: Object.values(InvoiceType),required:false},OnDate:{type:String,enum: Object.values(DateTime),required:false},CustomerId:{type:Number,required:false},MobileNo:{type:String,required:false},TotalAmount:{type:Number,required:false},TotalDiscount:{type:Number,required:false},TotalTaxAmount:{type:Number,required:false},TotalQuantity:{type:Number,required:false},InvoicePayment:{type:String,enum: Object.values(virtual),required:false},ICollection<InvoiceItem>:{type:String,enum: Object.values(virtual),required:false}},{collection:"Invoice-extd-BaseST"});
+module.exports = mongoose.model("Invoice-extd-BaseST",Invoice-extd-BaseSTSchema);

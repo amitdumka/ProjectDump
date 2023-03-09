@@ -1,0 +1,664 @@
+{
+    "models": [
+        {
+            "classModel": true,
+            "model": "BaseGT",
+            "modelFile": "BaseGT.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/Common/Models",
+            "status": "OK",
+            "namespace": "Common.Models"
+        },
+        {
+            "classModel": true,
+            "model": "BaseST",
+            "modelFile": "BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/Common/Models",
+            "status": "OK",
+            "namespace": "Common.Models"
+        },
+        {
+            "classModel": true,
+            "model": "BaseLocal",
+            "modelFile": "BaseLocal.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/Common/Models",
+            "status": "OK",
+            "namespace": "Common.Models"
+        },
+        {
+            "classModel": true,
+            "model": "InvoiceMV",
+            "modelFile": "InvoiceMV.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/ModelVeiws.Invoices",
+            "status": "OK",
+            "namespace": "MobileX.ModelVeiws.Invoices"
+        },
+        {
+            "classModel": true,
+            "model": "SalesmanMV",
+            "modelFile": "SalesmanMV.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/ModelVeiws.Invoices",
+            "status": "OK",
+            "namespace": "MobileX.ModelVeiws.Invoices"
+        },
+        {
+            "classModel": true,
+            "model": "ProductStockMV",
+            "modelFile": "ProductStockMV.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/ModelViews.Invoices",
+            "status": "OK",
+            "namespace": "MobileX.ModelViews.Invoices"
+        },
+        {
+            "classModel": true,
+            "model": "EmployeeMV",
+            "modelFile": "EmployeeMV.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/ModelVeiws.Payrolls",
+            "status": "OK",
+            "namespace": "MobileX.ModelVeiws.Payrolls"
+        },
+        {
+            "classModel": true,
+            "model": "AttendanceMV",
+            "modelFile": "AttendanceMV.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/ModelVeiws.Payrolls",
+            "status": "OK",
+            "namespace": "MobileX.ModelVeiws.Payrolls"
+        },
+        {
+            "classModel": true,
+            "model": "SalaryPaymentMV",
+            "modelFile": "SalaryPaymentMV.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/ModelVeiws.Payrolls",
+            "status": "OK",
+            "namespace": "MobileX.ModelVeiws.Payrolls"
+        },
+        {
+            "classModel": true,
+            "model": "Bank",
+            "modelFile": "Bank.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Accounts.Banking",
+            "status": "OK",
+            "namespace": "MobileX.Models.Accounts.Banking"
+        },
+        {
+            "classModel": true,
+            "model": "BankAccount",
+            "modelFile": "BankAccount.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Accounts.Banking",
+            "status": "OK",
+            "namespace": "MobileX.Models.Accounts.Banking"
+        },
+        {
+            "classModel": true,
+            "model": "EletricityConnection-extd-BaseST",
+            "modelFile": "EletricityConnection-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Accounts.Facilities",
+            "status": "OK",
+            "namespace": "MobileX.Models.Accounts.Facilities"
+        },
+        {
+            "classModel": true,
+            "model": "EletricityBill-extd-BaseST",
+            "modelFile": "EletricityBill-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Accounts.Facilities",
+            "status": "OK",
+            "namespace": "MobileX.Models.Accounts.Facilities"
+        },
+        {
+            "classModel": true,
+            "model": "EletricityBillPayment-extd-BaseST",
+            "modelFile": "EletricityBillPayment-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Accounts.Facilities",
+            "status": "OK",
+            "namespace": "MobileX.Models.Accounts.Facilities"
+        },
+        {
+            "classModel": true,
+            "model": "RentedProperty-extd-BaseGT",
+            "modelFile": "RentedProperty-extd-BaseGT.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Accounts.Renting",
+            "status": "OK",
+            "namespace": "MobileX.Models.Accounts.Renting"
+        },
+        {
+            "classModel": true,
+            "model": "Rent-extd-BaseST",
+            "modelFile": "Rent-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Accounts.Renting",
+            "status": "OK",
+            "namespace": "MobileX.Models.Accounts.Renting"
+        },
+        {
+            "classModel": true,
+            "model": "Voucher-extd-BaseST",
+            "modelFile": "Voucher-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Accounts.Vochers",
+            "status": "OK",
+            "namespace": "MobileX.Models.Accounts.Vochers"
+        },
+        {
+            "classModel": true,
+            "model": "CashVoucher-extd-BaseST",
+            "modelFile": "CashVoucher-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Accounts.Vochers",
+            "status": "OK",
+            "namespace": "MobileX.Models.Accounts.Vochers"
+        },
+        {
+            "classModel": true,
+            "model": "Note-extd-BaseST",
+            "modelFile": "Note-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Accounts.Vochers",
+            "status": "OK",
+            "namespace": "MobileX.Models.Accounts.Vochers"
+        },
+        {
+            "classModel": true,
+            "model": "VendorNotes-extd-Note",
+            "modelFile": "VendorNotes-extd-Note.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Accounts.Vochers",
+            "status": "OK",
+            "namespace": "MobileX.Models.Accounts.Vochers"
+        },
+        {
+            "classModel": true,
+            "model": "Invoice-extd-BaseST",
+            "modelFile": "Invoice-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Invoices",
+            "status": "OK",
+            "namespace": "MobileX.Models.Invoices"
+        },
+        {
+            "classModel": true,
+            "model": "InvoiceItem",
+            "modelFile": "InvoiceItem.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Invoices",
+            "status": "OK",
+            "namespace": "MobileX.Models.Invoices"
+        },
+        {
+            "classModel": true,
+            "model": "InvoicePayment",
+            "modelFile": "InvoicePayment.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Invoices",
+            "status": "OK",
+            "namespace": "MobileX.Models.Invoices"
+        },
+        {
+            "classModel": true,
+            "model": "InvoicePrint",
+            "modelFile": "InvoicePrint.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Invoices",
+            "status": "OK",
+            "namespace": "MobileX.Models.Invoices"
+        },
+        {
+            "classModel": true,
+            "model": "ProductStock-extd-BaseST",
+            "modelFile": "ProductStock-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Invoices",
+            "status": "OK",
+            "namespace": "MobileX.Models.Invoices"
+        },
+        {
+            "classModel": true,
+            "model": "Stock-extd-BaseST",
+            "modelFile": "Stock-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Invoices",
+            "status": "OK",
+            "namespace": "MobileX.Models.Invoices"
+        },
+        {
+            "classModel": true,
+            "model": "Employee-extd-BaseST",
+            "modelFile": "Employee-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Payrolls",
+            "status": "OK",
+            "namespace": "MobileX.Models.Payrolls"
+        },
+        {
+            "classModel": true,
+            "model": "Attendance-extd-BaseST",
+            "modelFile": "Attendance-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Payrolls",
+            "status": "OK",
+            "namespace": "MobileX.Models.Payrolls"
+        },
+        {
+            "classModel": true,
+            "model": "SalaryPayment-extd-BaseST",
+            "modelFile": "SalaryPayment-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Payrolls",
+            "status": "OK",
+            "namespace": "MobileX.Models.Payrolls"
+        },
+        {
+            "classModel": true,
+            "model": "DailySale-extd-BaseST",
+            "modelFile": "DailySale-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Sales",
+            "status": "OK",
+            "namespace": "MobileX.Models.Sales"
+        },
+        {
+            "classModel": true,
+            "model": "DueBill-extd-BaseST",
+            "modelFile": "DueBill-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Sales",
+            "status": "OK",
+            "namespace": "MobileX.Models.Sales"
+        },
+        {
+            "classModel": true,
+            "model": "DueBillRecovered-extd-BaseST",
+            "modelFile": "DueBillRecovered-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Sales",
+            "status": "OK",
+            "namespace": "MobileX.Models.Sales"
+        },
+        {
+            "classModel": true,
+            "model": "Store-extd-BaseGT",
+            "modelFile": "Store-extd-BaseGT.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Stores",
+            "status": "OK",
+            "namespace": "MobileX.Models.Stores"
+        },
+        {
+            "classModel": true,
+            "model": "Company",
+            "modelFile": "Company.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Stores",
+            "status": "OK",
+            "namespace": "MobileX.Models.Stores"
+        },
+        {
+            "classModel": true,
+            "model": "Salesman-extd-BaseST",
+            "modelFile": "Salesman-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Stores",
+            "status": "OK",
+            "namespace": "MobileX.Models.Stores"
+        },
+        {
+            "classModel": true,
+            "model": "User",
+            "modelFile": "User.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/MobileX/Models.Users",
+            "status": "OK",
+            "namespace": "MobileX.Models.Users"
+        },
+        {
+            "classModel": true,
+            "model": "Bank",
+            "modelFile": "Bank.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/RestFull/Models.Accounts.Banking",
+            "status": "OK",
+            "namespace": "RestFull.Models.Accounts.Banking"
+        },
+        {
+            "classModel": true,
+            "model": "BankAccount",
+            "modelFile": "BankAccount.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/RestFull/Models.Accounts.Banking",
+            "status": "OK",
+            "namespace": "RestFull.Models.Accounts.Banking"
+        },
+        {
+            "classModel": true,
+            "model": "EletricityConnection-extd-BaseST",
+            "modelFile": "EletricityConnection-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/RestFull/Models.Accounts.Facilities",
+            "status": "OK",
+            "namespace": "RestFull.Models.Accounts.Facilities"
+        },
+        {
+            "classModel": true,
+            "model": "EletricityBill-extd-BaseST",
+            "modelFile": "EletricityBill-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/RestFull/Models.Accounts.Facilities",
+            "status": "OK",
+            "namespace": "RestFull.Models.Accounts.Facilities"
+        },
+        {
+            "classModel": true,
+            "model": "EletricityBillPayment-extd-BaseST",
+            "modelFile": "EletricityBillPayment-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/RestFull/Models.Accounts.Facilities",
+            "status": "OK",
+            "namespace": "RestFull.Models.Accounts.Facilities"
+        },
+        {
+            "classModel": true,
+            "model": "RentedProperty-extd-BaseGT",
+            "modelFile": "RentedProperty-extd-BaseGT.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/RestFull/Models.Accounts.Renting",
+            "status": "OK",
+            "namespace": "RestFull.Models.Accounts.Renting"
+        },
+        {
+            "classModel": true,
+            "model": "Rent-extd-BaseST",
+            "modelFile": "Rent-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/RestFull/Models.Accounts.Renting",
+            "status": "OK",
+            "namespace": "RestFull.Models.Accounts.Renting"
+        },
+        {
+            "classModel": true,
+            "model": "Voucher-extd-BaseST",
+            "modelFile": "Voucher-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/RestFull/Models.Accounts.Vochers",
+            "status": "OK",
+            "namespace": "RestFull.Models.Accounts.Vochers"
+        },
+        {
+            "classModel": true,
+            "model": "CashVoucher-extd-BaseST",
+            "modelFile": "CashVoucher-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/RestFull/Models.Accounts.Vochers",
+            "status": "OK",
+            "namespace": "RestFull.Models.Accounts.Vochers"
+        },
+        {
+            "classModel": true,
+            "model": "Note-extd-BaseST",
+            "modelFile": "Note-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/RestFull/Models.Accounts.Vochers",
+            "status": "OK",
+            "namespace": "RestFull.Models.Accounts.Vochers"
+        },
+        {
+            "classModel": true,
+            "model": "VendorNote-extd-Note",
+            "modelFile": "VendorNote-extd-Note.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/RestFull/Models.Accounts.Vochers",
+            "status": "OK",
+            "namespace": "RestFull.Models.Accounts.Vochers"
+        },
+        {
+            "classModel": true,
+            "model": "Invoice",
+            "modelFile": "Invoice.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/RestFull/Models.Invoices",
+            "status": "OK",
+            "namespace": "RestFull.Models.Invoices"
+        },
+        {
+            "classModel": true,
+            "model": "InvoiceItem",
+            "modelFile": "InvoiceItem.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/RestFull/Models.Invoices",
+            "status": "OK",
+            "namespace": "RestFull.Models.Invoices"
+        },
+        {
+            "classModel": true,
+            "model": "InvoicePayment",
+            "modelFile": "InvoicePayment.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/RestFull/Models.Invoices",
+            "status": "OK",
+            "namespace": "RestFull.Models.Invoices"
+        },
+        {
+            "classModel": true,
+            "model": "InvoicePrint",
+            "modelFile": "InvoicePrint.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/RestFull/Models.Invoices",
+            "status": "OK",
+            "namespace": "RestFull.Models.Invoices"
+        },
+        {
+            "classModel": true,
+            "model": "Employee-extd-BaseST",
+            "modelFile": "Employee-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/RestFull/Models.Payrolls",
+            "status": "OK",
+            "namespace": "RestFull.Models.Payrolls"
+        },
+        {
+            "classModel": true,
+            "model": "Attendance-extd-BaseST",
+            "modelFile": "Attendance-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/RestFull/Models.Payrolls",
+            "status": "OK",
+            "namespace": "RestFull.Models.Payrolls"
+        },
+        {
+            "classModel": true,
+            "model": "SalaryPayment-extd-BaseST",
+            "modelFile": "SalaryPayment-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/RestFull/Models.Payrolls",
+            "status": "OK",
+            "namespace": "RestFull.Models.Payrolls"
+        },
+        {
+            "classModel": true,
+            "model": "Store-extd-BaseGT",
+            "modelFile": "Store-extd-BaseGT.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/RestFull/Models.Stores",
+            "status": "OK",
+            "namespace": "RestFull.Models.Stores"
+        },
+        {
+            "classModel": true,
+            "model": "Company",
+            "modelFile": "Company.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/RestFull/Models.Stores",
+            "status": "OK",
+            "namespace": "RestFull.Models.Stores"
+        },
+        {
+            "classModel": true,
+            "model": "Salesman-extd-BaseST",
+            "modelFile": "Salesman-extd-BaseST.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/RestFull/Models.Stores",
+            "status": "OK",
+            "namespace": "RestFull.Models.Stores"
+        },
+        {
+            "classModel": true,
+            "model": "User",
+            "modelFile": "User.js",
+            "baseFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models/RestFull/Models.Users",
+            "status": "OK",
+            "namespace": "RestFull.Models.Users"
+        }
+    ],
+    "fileList": [
+        {
+            "file": "Base.cs",
+            "name": "Base",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/Common/Models",
+            "classModel": true
+        },
+        {
+            "file": "DataTypes.cs",
+            "name": "DataTypes",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/Common/Types",
+            "classModel": false,
+            "status": "Error:File is not model, Manual Check is Required"
+        },
+        {
+            "file": "Enums.cs",
+            "name": "Enums",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/Common/Types",
+            "classModel": false,
+            "status": "Error:File is not model, Manual Check is Required"
+        },
+        {
+            "file": "InvoiceMV.cs",
+            "name": "InvoiceMV",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/ModelViews/Invoices",
+            "classModel": true
+        },
+        {
+            "file": "ProductStock.cs",
+            "name": "ProductStock",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/ModelViews/Invoices",
+            "classModel": true
+        },
+        {
+            "file": "EmployeeMV.cs",
+            "name": "EmployeeMV",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/ModelViews/Payrolls",
+            "classModel": true
+        },
+        {
+            "file": "Bank.cs",
+            "name": "Bank",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/Models/Accounts/Banking",
+            "classModel": true
+        },
+        {
+            "file": "BankAccount.cs",
+            "name": "BankAccount",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/Models/Accounts/Banking",
+            "classModel": true
+        },
+        {
+            "file": "EletricityConnection.cs",
+            "name": "EletricityConnection",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/Models/Accounts/Facilities",
+            "classModel": true
+        },
+        {
+            "file": "Rent.cs",
+            "name": "Rent",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/Models/Accounts/Renting",
+            "classModel": true
+        },
+        {
+            "file": "Vocher.cs",
+            "name": "Vocher",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/Models/Accounts/Vochers",
+            "classModel": true
+        },
+        {
+            "file": "Invoice.cs",
+            "name": "Invoice",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/Models/Invoices",
+            "classModel": true
+        },
+        {
+            "file": "Employee.cs",
+            "name": "Employee",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/Models/Payrolls",
+            "classModel": true
+        },
+        {
+            "file": "DailySale.cs",
+            "name": "DailySale",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/Models/Sales",
+            "classModel": true
+        },
+        {
+            "file": "Store.cs",
+            "name": "Store",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/Models/Stores",
+            "classModel": true
+        },
+        {
+            "file": "User.cs",
+            "name": "User",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/Models/Users",
+            "classModel": true
+        },
+        {
+            "file": "Bank.cs",
+            "name": "Bank",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/RestFull/Models/Accounts/Banking",
+            "classModel": true
+        },
+        {
+            "file": "BankAccount.cs",
+            "name": "BankAccount",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/RestFull/Models/Accounts/Banking",
+            "classModel": true
+        },
+        {
+            "file": "EletricityConnection.cs",
+            "name": "EletricityConnection",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/RestFull/Models/Accounts/Facilities",
+            "classModel": true
+        },
+        {
+            "file": "Rent.cs",
+            "name": "Rent",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/RestFull/Models/Accounts/Renting",
+            "classModel": true
+        },
+        {
+            "file": "TestClass.cs",
+            "name": "TestClass",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/RestFull/Models/Accounts",
+            "classModel": false,
+            "status": "Error:File is not model, Manual Check is Required"
+        },
+        {
+            "file": "Vocher.cs",
+            "name": "Vocher",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/RestFull/Models/Accounts/Vochers",
+            "classModel": true
+        },
+        {
+            "file": "Invoice.cs",
+            "name": "Invoice",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/RestFull/Models/Invoices",
+            "classModel": true
+        },
+        {
+            "file": "Employee.cs",
+            "name": "Employee",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/RestFull/Models/Payrolls",
+            "classModel": true
+        },
+        {
+            "file": "Store.cs",
+            "name": "Store",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/RestFull/Models/Stores",
+            "classModel": true
+        },
+        {
+            "file": "User.cs",
+            "name": "User",
+            "folder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/RestFull/Models/Users",
+            "classModel": true
+        }
+    ],
+    "folderList": [
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/Common",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/Common/Models",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/Common/Types",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/ModelViews",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/ModelViews/Invoices",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/ModelViews/Payrolls",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/Models",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/Models/Accounts",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/Models/Accounts/Banking",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/Models/Accounts/Facilities",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/Models/Accounts/Renting",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/Models/Accounts/Vochers",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/Models/Invoices",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/Models/Payrolls",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/Models/Sales",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/Models/Stores",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/MobileX/Models/Users",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/RestFull",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/RestFull/Models",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/RestFull/Models/Accounts",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/RestFull/Models/Accounts/Banking",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/RestFull/Models/Accounts/Facilities",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/RestFull/Models/Accounts/Renting",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/RestFull/Models/Accounts/Vochers",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/RestFull/Models/Invoices",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/RestFull/Models/Payrolls",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/RestFull/Models/Stores",
+        "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared/RestFull/Models/Users"
+    ],
+    "basePathFolder": "/Users/amitkumar/Projects/eStore-MAUI/eStore.Shared",
+    "baseOutputFolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS",
+    "modelfolder": "/Users/amitkumar/Projects/MODELGEN/eStoreNODEJS/models",
+    "modelListFile": "modelList.json"
+}

@@ -1,0 +1,4 @@
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+let Attendance-extd-BaseSTSchema = new Schema({EmployeeId:{type:Number,required:false},Employee:{type:String,enum: Object.values(virtual),required:false},AttDate:{type:String,enum: Object.values(DateTime),required:false},EntryTime:{type:String,required:false},Status:{type:String,enum: Object.values(AttUnit),required:false},Remarks:{type:String,required:false},IsTailoring:{type:Boolean,required:false}},{collection:"Attendance-extd-BaseST"});
+module.exports = mongoose.model("Attendance-extd-BaseST",Attendance-extd-BaseSTSchema);

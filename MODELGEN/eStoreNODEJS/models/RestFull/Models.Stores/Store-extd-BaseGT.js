@@ -1,0 +1,4 @@
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+let Store-extd-BaseGTSchema = new Schema({StoreCode:{type:String,required:false},StoreName:{type:String,required:false},Address:{type:String,required:false},City:{type:String,required:false},PinCode:{type:String,required:false},PhoneNo:{type:String,required:false},StoreManagerName:{type:String,required:false},StoreManagerPhoneNo:{type:String,required:false},PanNo:{type:String,required:false},GSTNO:{type:String,required:false},NoOfEmployees:{type:Number,required:false},OpeningDate:{type:String,enum: Object.values(DateTime),required:false},ClosingDate:{type:String,enum: Object.values(DateTime?),required:false},Status:{type:Boolean,required:false},CompanyId:{type:String,enum: Object.values(int?),required:false},Company:{type:String,enum: Object.values(virtual),required:false}},{collection:"Store-extd-BaseGT"});
+module.exports = mongoose.model("Store-extd-BaseGT",Store-extd-BaseGTSchema);
